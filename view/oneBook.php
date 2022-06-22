@@ -6,6 +6,9 @@
     <div class="card-body">
         <h5 class="card-title">Par : <?= strtoupper($tablivre['prenom'])." ". ucfirst($tablivre['nom']); ?></h5>
         <p class="card-text"><?= $tablivre['resume'] ?></p>
+        <p class="card-text"><?= $tablivre['prix'] ?></p>
+        <p class="card-text"><?= $tablivre['edition'] ?></p>
+        <p class="card-text"><?= $tablivre['langue'] ?></p>
     </div>
 </div>
 <?php 

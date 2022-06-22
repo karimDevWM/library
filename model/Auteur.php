@@ -7,7 +7,7 @@
         {
             // chercher tous les auteurs
             $bdd = $this->dbConnect();
-            $req = $bdd->query("SELECT * FROM author");
+            $req = $bdd->query("SELECT * FROM auteur");
             $authors = $req->fetchAll(PDO::FETCH_ASSOC);
 
             return $authors;
@@ -18,8 +18,8 @@
             // chercher un seul livre par l'id
             $bdd = $this->dbConnect();
              $req = $bdd->query("SELECT * FROM `auteur` 
-                                INNER JOIN auteur ON livre.fk_auteur = auteur.id
-                                WHERE livre.id = ".$idAuthor);
+                                INNER JOIN livre ON livre.fk_auteur = auteur.id
+                                WHERE fk_auteur = ".$idAuthor);
              $author = $req->fetch(PDO::FETCH_ASSOC);
 
              return $author;

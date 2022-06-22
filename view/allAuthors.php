@@ -12,7 +12,7 @@
                     <p class="card-text"><?= $author['prenom'] ?></p>
                     <p class="card-text"><?= $author['pays'] ?></p>
                     <p class="card-text"><?= $author['date_deces'] ?></p>
-                    <a href="index.php?page=oneLivre&id=<?= $author['id']?>" class="card-link">Plus d'infos</a>
+                    <a href="index.php?page=oneAuthor&id=<?= $author['id']?>" class="card-link">Plus d'infos</a>
                 </div>
             </div>
         </div>

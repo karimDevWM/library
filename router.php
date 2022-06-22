@@ -11,6 +11,11 @@
         {
             displayAllBooks();
         }
+
+        if($_GET['page']=="oneAuthor" && $_GET['id']> 0)
+        {
+            displayAuteur();
+        }
         elseif($_GET["page"]=="allAuthors")
         {
             displayAllAuthors();

@@ -12,7 +12,6 @@
                     <p class="card-text"><?= $book['resume'] ?></p>
                     <p class="card-text"><?= $book['prix'] ?></p>
                     <p class="card-text"><?= $book['date_parution'] ?></p>
-                    <p class="card-text"><?= $book['fk_genre'] ?></p>
                     <p class="card-text"><?= $book['edition'] ?></p>
                     <p class="card-text"><?= $book['langue'] ?></p>
                     <p class="card-text"><?= $book['image'] ?></p>
